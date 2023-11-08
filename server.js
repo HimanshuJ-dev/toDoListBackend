@@ -57,6 +57,6 @@ mongoose
     "mongodb+srv://himanshu:RNKTyKW2kQNJnxq2@cluster0.q1sgt3q.mongodb.net/ToDoList"
   )
   .then((result) => {
-    app.listen(process.env.PORT || 8080);
+    app.listen(process.env.PORT || 8080, () => console.log('server is online'));
   })
   .catch((err) => console.log(err));
